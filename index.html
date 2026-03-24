@@ -3,86 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GameBlitz</title>
+    <title>GameBlitz | Premium Gaming Store</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>GameBlitz</h1>
+    <header class="main-header">
+      <div class="nav-container">
+        <div class="logo">Game<span>Blitz</span></div>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="nav-btn">Home</a></li>
+            <li><a href="#" class="nav-btn">Products</a></li>
+            <li><a href="#" class="nav-btn">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <nav>
-      <p>Navigation Menu:</p>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </nav>
+    <main>
+      <section id="new-releases">
+        <h2>Latest Releases</h2>
+        <p>Check out the most anticipated titles available this week:</p>
+
+        <ol>
+          <li>
+            <strong>Elden Ring: Shadow of the Erdtree</strong>
+            <br />
+            <img
+              src="assets/img/elden_ring_shadow.jpg"
+              alt="Elden Ring Shadow of the Erdtree"
+              width="150"
+            />
+          </li>
+          <li>
+            <strong>Final Fantasy VII Rebirth</strong>
+            <br />
+            <img
+              src="assets/img/ff7rebirth.jpg"
+              alt="Final Fantasy VII Rebirth"
+              width="150"
+            />
+          </li>
+        </ol>
+      </section>
+
+      <hr />
+
+      <section id="categories">
+        <h3>Product Categories</h3>
+        <p>Browse our extensive collection of hardware and software:</p>
+
+        <ul class="category-list">
+          <li>
+            Consoles and Hardware
+            <ul>
+              <li>
+                Sony PlayStation
+                <ul>
+                  <li>PlayStation 5 Slim</li>
+                  <li>DualSense Controllers</li>
+                </ul>
+              </li>
+              <li>
+                Nintendo Switch
+                <ul>
+                  <li>Switch OLED Model</li>
+                  <li>Joy-Con Pair</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            PC Gaming Peripherals
+            <ul>
+              <li>Mechanical Keyboards</li>
+              <li>Gaming Mice</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </main>
 
     <hr />
 
-    <section id="new-releases">
-      <h2>Latest Releases</h2>
-      <p>Check out the most anticipated titles available this week:</p>
-
-      <ol>
-        <li>
-          <strong>Elden Ring: Shadow of the Erdtree</strong>
-          <br />
-          <img
-            src="assets/img/elden_ring_shadow.jpg"
-            alt="Elden Ring Shadow of the Erdtree"
-            width="150"
-          />
-        </li>
-        <li>
-          <strong>Final Fantasy VII Rebirth</strong>
-          <br />
-          <img
-            src="assets/img/ff7rebirth.jpg"
-            alt="Final Fantasy VII Rebirth"
-            width="150"
-          />
-        </li>
-      </ol>
-    </section>
-
-    <section">
-      <h3>Product Categories</h3>
-      <p>Browse our extensive collection of hardware and software:</p>
-
-      <ul>
-        <li>
-          Consoles and Hardware
-          <ul>
-            <li>
-              Sony PlayStation
-              <ul>
-                <li>PlayStation 5 Slim</li>
-                <li>DualSense Controllers</li>
-              </ul>
-            </li>
-            <li>
-              Nintendo Switch
-              <ul>
-                <li>Switch OLED Model</li>
-                <li>Joy-Con Pair</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          PC Gaming Peripherals
-          <ul>
-            <li>Mechanical Keyboards</li>
-            <li>Gaming Mice</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-
-    <hr />
-
-    <footer>
-      <p>GameBlitz</p>
+    <footer class="main-footer">
+      <p><strong>GameBlitz</strong></p>
       <p>Contact Info:</p>
       <ul>
         <li>Email: support@gameblitz.com</li>
