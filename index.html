@@ -25,26 +25,46 @@
         <h2>Latest Releases</h2>
         <p>Check out the most anticipated titles available this week:</p>
 
-        <ol>
-          <li>
-            <strong>Elden Ring: Shadow of the Erdtree</strong>
-            <br />
-            <img
-              src="assets/img/elden_ring_shadow.jpg"
-              alt="Elden Ring Shadow of the Erdtree"
-              width="150"
-            />
-          </li>
-          <li>
-            <strong>Final Fantasy VII Rebirth</strong>
-            <br />
-            <img
-              src="assets/img/ff7rebirth.jpg"
-              alt="Final Fantasy VII Rebirth"
-              width="150"
-            />
-          </li>
-        </ol>
+        <div class="carousel-container">
+          <button id="prevBtn" class="carousel-control">❮</button>
+
+          <div class="carousel-viewport">
+            <div id="carouselTrack" class="carousel-track">
+              <div class="carousel-item">
+                <img src="assets/img/clair-obscur.jpg" alt="Clair Obscur" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/cyberpunk.jpg" alt="Cyberpunk 2077" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/elden_ring_shadow.jpg" alt="Elden Ring" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/ff7rebirth.jpg" alt="FF7 Rebirth" />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/img/hollowknightsilksong.jpg"
+                  alt="Hollow Knight Silksong"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/img/monsterhunterwilds.jpg"
+                  alt="Monster Hunter Wilds"
+                />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/re9.jpg" alt="Resident Evil 9" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/spider-man-2.jpg" alt="Spider-Man 2" />
+              </div>
+            </div>
+          </div>
+
+          <button id="nextBtn" class="carousel-control">❯</button>
+        </div>
       </section>
 
       <hr />
@@ -94,5 +114,7 @@
         <li>Location: Various branches nationwide</li>
       </ul>
     </footer>
+
+    <script src="js/carousel.js"></script>
   </body>
 </html>

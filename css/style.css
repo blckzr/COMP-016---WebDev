@@ -105,3 +105,54 @@ ul.category-list ul {
   list-style: none;
   padding: 0;
 }
+
+/* --- Carousel Visual Design --- */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 900px; /* Balanced layout */
+  margin: 0 auto;
+}
+
+.carousel-viewport {
+  overflow: hidden; /* Clips the images outside the view */
+  width: 100%;
+  border-radius: 12px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Smooth Interactivity */
+}
+
+.carousel-item {
+  min-width: 100%; /* Show one image at a time */
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-item img {
+  /* Standardized Pixel Size */
+  width: 600px;
+  height: 350px;
+  object-fit: cover; /* Prevents stretching */
+  border: 3px solid #bb86fc;
+}
+
+/* --- Control Buttons --- */
+.carousel-control {
+  background: rgba(26, 26, 26, 0.8);
+  color: #bb86fc;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.3s;
+}
+
+.carousel-control:hover {
+  color: white;
+  transform: scale(1.2);
+}
