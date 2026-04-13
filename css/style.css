@@ -80,11 +80,6 @@ img {
   transition: transform 0.2s;
 }
 
-img:hover {
-  transform: scale(1.05);
-  border-color: #bb86fc;
-}
-
 /* --- Lists Styling --- */
 ul.category-list > li {
   margin-bottom: 15px;

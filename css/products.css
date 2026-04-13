@@ -1,0 +1,103 @@
+.search-container {
+  margin-bottom: 30px;
+}
+
+#gameSearch {
+  width: 100%;
+  padding: 12px;
+  background: #1a1a1a;
+  border: 2px solid #bb86fc;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#searchFeedback {
+  color: #bb86fc;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  height: 20px;
+}
+
+/* --- Standardized Product Grid --- */
+.product-grid {
+  display: grid;
+  /* This creates a row of cards that won't exceed the container width */
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* --- The "Standard Size" Fix --- */
+.product-card {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.product-card img {
+  /* FORCE a standard pixel size */
+  width: 180px !important; /* Standardizing width */
+  height: 240px !important; /* Standardizing height */
+
+  /* This is CRITICAL: it prevents stretching while fitting the box */
+  object-fit: cover;
+
+  margin: 0 auto 10px auto;
+  display: block;
+  border: 1px solid #444;
+}
+
+.product-card h4 {
+  font-size: 1rem;
+  color: #bb86fc;
+  margin: 10px 0 0 0;
+}
+
+/* Modal Overlay Background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85); /* Balanced transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content Box */
+.modal-content {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid #bb86fc; /* Consistent purple accent */
+  text-align: center;
+  max-width: 400px;
+  position: relative;
+  animation: fadeIn 0.3s ease; /* Visual Design touch */
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2rem;
+  color: #bb86fc;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
