@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | GameBlitz</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="nav-container">
+        <div class="logo">Game<span>Blitz</span></div>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="nav-btn">Home</a></li>
+            <li><a href="products.html" class="nav-btn">Products</a></li>
+            <li>
+              <a href="contact.html" class="nav-btn active">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h2>Contact Support</h2>
+      <p>Have a question about a game? Send us a message!</p>
+
+      <form id="contactForm" class="contact-form">
+        <div class="input-group">
+          <label for="email">Email Address</label>
+          <input type="text" id="email" placeholder="example@email.com" />
+          <span id="emailError" class="error-msg"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="message">Your Message</label>
+          <textarea
+            id="message"
+            rows="5"
+            placeholder="Type your message here..."
+          ></textarea>
+          <span id="messageError" class="error-msg"></span>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </main>
+
+    <footer class="main-footer">
+      <p>&copy; 2026 GameBlitz | All Rights Reserved</p>
+    </footer>
+
+    <script src="js/contact.js"></script>
+  </body>
+</html>
